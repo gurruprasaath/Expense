@@ -19,7 +19,7 @@ const expenseSchema =  new mongoose.Schema({
     }
 })
 const mongo="mongodb+srv://Gurruprasaathmk:785297Car@cluster0.rkovrc2.mongodb.net/ExpenseTracker?retryWrites=true&w=majority&appName=Cluster0";
-const port = process.env.PORT;
+const port = 3000;
 const Expense = mongoose.model('Expense',expenseSchema) 
 mongoose.connect(mongo)
 .then(()=>{
